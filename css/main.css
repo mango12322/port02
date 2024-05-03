@@ -1,0 +1,193 @@
+.main {
+    margin-top: 10px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    gap: 10px;
+}
+
+.main__left {
+    background-color: #eeeeee;
+    height: 350px;
+    width: 15%;
+    flex-grow: 3;
+    padding: 25px;    
+}
+
+.main__left h2 {
+    margin-bottom: 15px;
+}
+
+.main__left p {
+    margin-bottom: 4px;        
+}
+
+/* main__middle */
+.main__middle {
+    background-color: #eeeeee;
+    flex-grow: 5;
+    width: 70%;
+    padding: 30px;
+}
+
+.main__middle_about {
+    position: relative;    
+    height: 200px;
+}
+
+.main__middle_about p {    
+    margin-top: 20px;
+}
+
+.main__line {
+    position: absolute;
+    width: 100%;
+    border: 1px solid white;   
+    bottom: 15px;     
+}
+
+.main__middle_skills {    
+    margin-top: 10px;
+}
+
+.main__middle_skills h2 {
+    margin-bottom: 35px;
+}
+
+.main__middle_skills span {        
+    float: left;    
+    border: 1px solid black;
+    border-radius: 20px;   
+    padding: 10px 30px;
+    margin-right: 15px;
+}
+
+
+/* main__right */
+.main__right {
+    background-color: #eeeeee;
+    flex-grow: 3;
+    width: 15%;
+    padding: 15px;
+}
+
+.main__right_find {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main__right_find i {
+    font-size: 80px;    
+}
+
+.main__right_find span {
+    margin-top: 5px;
+    margin-bottom: 15px;    
+    font-size: 1em;
+}
+
+.main__right_find span a {
+    text-decoration: none;
+    color: #70b9f7;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+}
+.main__right_find span a:hover {
+    color: rgb(172, 170, 170);
+}
+
+.main__right_know span {    
+    display: flex;
+    justify-content: center;        
+}
+
+.main__right_line {
+    border: 1px solid white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.main__right_img {
+    background-image: url(../img/gehlert-852762_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.main__right_people {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.main__right_text {
+    display: flex;
+    flex-direction: column;        
+    justify-content: center;
+}
+
+.main__right_text p {
+    font-size: 11px;
+    opacity: .7;
+    margin-bottom: 5px;
+}
+
+.main__right_text span {
+    font-size: 11px;
+    color: #70b9f7;
+}
+
+@media screen and (max-width: 1300px) {
+    main {
+        flex-direction: column;        
+    }
+
+    .main__left {
+        width: 100%;
+    }
+
+    .main__middle {
+        width: 100%;
+    }
+    .main__right {
+        width: 100%;
+    }
+    .main__right_line {
+        border: 1px solid white;
+        width: 50%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .main__middle_about {
+        height: 250px;
+    }
+
+    .main__line {        
+        bottom: 10px;     
+    }
+
+    .main__middle_skills {    
+        margin-top: 0;
+        height: 150px;
+    }
+    
+    .main__middle_skills h2 {
+        margin-bottom: 20px;
+    }
+
+    .main__middle_skills span {        
+        margin-bottom: 15px;     
+    }
+}
+

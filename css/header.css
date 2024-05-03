@@ -1,0 +1,113 @@
+.header {
+    background-color: #eeeeee;
+    margin-top: 20px;       
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+/* header__content */
+.header__content {
+    width: 100%;
+    height: 170px;
+    display: flex;    
+    align-items: center;
+    position: relative;
+}
+
+.header__content_line {
+    border: 1px solid white;
+    height: 140px;
+    position: absolute;    
+    right: 35%;
+}
+
+/* header__content_left */
+.header__content_left {
+    display: flex;    
+    width: 70%;
+    margin-left: 80px;    
+}
+
+.header__content_img {
+    background-image: url(../img/gehlert-852762_1280.jpg);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+}
+
+.header__content_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__content_text span {
+    margin: 5px 0;
+    color: #70B9F7;
+}
+
+.header__content_text span i {
+    margin-right: 5px;
+}
+
+/* header__content_right */
+.header__content_right {
+    display: flex;    
+    align-items: center;
+    width: 30%;
+    font-size: 1.2em;          
+}
+
+.header__content_right p {
+    margin-bottom: 9px;
+}
+
+.header__content_right p:last-child {
+    margin-bottom: 0;
+}
+
+.header__content_list {    
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+    body {
+        padding: none;
+    }
+    .header {        
+        height: 400px;
+    }
+    .header__content {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header__content_left {
+        width: 100%;        
+        margin-left: 20%;
+    }
+    .header__content_right {
+        width: 100%;
+        margin-left: 25%;
+        margin-top: 50px;
+    }
+    .header__content_line {
+        display: none;
+    }
+    .header__content_text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header__content_left {
+        margin-left: 10%;
+    }
+    .header__content_right {
+        margin-left: 13%;
+    }
+}
